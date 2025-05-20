@@ -1,0 +1,26 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded background -->
+  <rect width="48" height="48" rx="8.88889" fill="white"/>
+
+  <!-- Initials -->
+  <text
+    x="50%"
+    y="50%"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Inter, sans-serif"
+    font-weight="700"
+    font-size="24"
+    fill="url(#paint0_linear_FE)"
+  >
+    FE
+  </text>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="paint0_linear_FE" x1="8" y1="35.5" x2="38.0109" y2="10.5484" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#989FFF"/>
+      <stop offset="1" stop-color="#29A2FF"/>
+    </linearGradient>
+  </defs>
+</svg>
