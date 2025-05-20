@@ -244,9 +244,9 @@ export const projects = [
     {
         iconUrl: bot,
         theme: 'btn-back-green',
-        name: 'Web Scraping Articles for Scrape.done',
-        description: 'Authored a series of advanced web scraping tutorials covering techniques in Python, Ruby, JavaScript, and PHP—focused on real-world anti-bot strategies and performance optimization.',
-        link: 'https://scrape.do/authors/fimber/',
+        name: 'CSR vs SSR vs Pre-rendering: Which Rendering Technique to Choose',
+        description: 'A detailed LogRocket guide that breaks down client-side rendering (CSR), server-side rendering (SSR), and pre-rendering, comparing their performance trade-offs and outlining when each approach shines.',
+        link: 'https://blog.logrocket.com/csr-ssr-pre-rendering-which-rendering-technique-choose/',
     },
     {
         iconUrl: car,
@@ -258,9 +258,9 @@ export const projects = [
     {
         iconUrl: rocket,
         theme: 'btn-back-pink',
-        name: 'Technical articles for Logrocket',
-        description: 'Authored a series of technical articles on LogRocket, covering topics like CSS, React, and web development best practices, contributing to developer education and engagement.',
-        link: 'https://blog.logrocket.com/author/fimberelemuwa/',
+        name: 'Best React Component Libraries for 2025',
+        description: 'Published an in-depth article in JavaScript in Plain English that compares the top React component libraries and helps developers pick the right UI toolkit for 2024.',
+        link: 'https://javascript.plainenglish.io/best-react-component-libraries-for-2024-7f0ae810a378',
     },
     {
         iconUrl: estate,
