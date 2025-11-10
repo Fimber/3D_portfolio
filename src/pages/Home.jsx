@@ -14,6 +14,7 @@ const Home = () => {
   const [currentStage, setCurrentStage] = useState(1);
   const [isRotating, setIsRotating] = useState(false);
   const [isPlayingMusic, setIsPlayingMusic] = useState(false);
+  const [showScrollTip, setShowScrollTip] = useState(true);
 
   useEffect(() => {
     if (isPlayingMusic) {
@@ -24,6 +25,13 @@ const Home = () => {
       audioRef.current.pause();
     };
   }, [isPlayingMusic]);
+
+  useEffect(() => {
+    if (!showScrollTip) return;
+
+    const timer = setTimeout(() => setShowScrollTip(false), 5000);
+    return () => clearTimeout(timer);
+  }, [showScrollTip]);
 
   const adjustBiplaneForScreenSize = () => {
     let screenScale, screenPosition;
@@ -59,6 +67,22 @@ const Home = () => {
 
   return (
     <section className='w-full h-screen relative'>
+      {showScrollTip && (
+        <div className='fixed inset-0 z-50 flex items-center justify-center bg-black/40'>
+          <div className='mx-4 rounded-2xl bg-white/80 px-6 py-8 text-center shadow-2xl backdrop-blur-md'>
+            <p className='text-2xl font-semibold text-slate-800'>
+              Scroll left or right
+            </p>
+            <button
+              type='button'
+              onClick={() => setShowScrollTip(false)}
+              className='mt-6 rounded-full bg-slate-800 px-5 py-2 text-sm font-medium uppercase tracking-wide text-white'
+            >
+              Got it
+            </button>
+          </div>
+        </div>
+      )}
       <div className='absolute top-28 left-0 right-0 z-10 flex items-center justify-center'>
         {currentStage && <HomeInfo currentStage={currentStage} />}
       </div>
